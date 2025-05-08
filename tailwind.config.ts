@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -61,6 +62,32 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				brand: {
+					"50": "#fdf6f6",
+					"100": "#faebea",
+					"200": "#f5d6d4",
+					"300": "#ebb5b2",
+					"400": "#e08a85",
+					"500": "#d06961",
+					"600": "#bd4c44",
+					"700": "#a03a33",
+					"800": "#85332d",
+					"900": "#702e2b",
+					"950": "#3c1613",
+				},
+				sand: {
+					"50": "#f8f7f3",
+					"100": "#efeae1",
+					"200": "#ded3c3",
+					"300": "#cab79f",
+					"400": "#b79a7d",
+					"500": "#a68365",
+					"600": "#906c54",
+					"700": "#785848",
+					"800": "#64493e",
+					"900": "#543f37",
+					"950": "#2d201c",
 				}
 			},
 			borderRadius: {
@@ -84,11 +111,25 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				'fade-in': {
+					'0%': {
+						opacity: '0',
+						transform: 'translateY(10px)'
+					},
+					'100%': {
+						opacity: '1',
+						transform: 'translateY(0)'
+					}
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'fade-in': 'fade-in 0.5s ease-out forwards'
+			},
+			fontFamily: {
+				tajawal: ['Tajawal', 'sans-serif'],
 			}
 		}
 	},
